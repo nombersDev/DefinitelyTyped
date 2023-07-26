@@ -239,8 +239,6 @@ user.ownsDepot(2, { excludeExpiring: false, excludeFree: true });
 user.getOwnedPackages({ excludeShared: false, excludeFree: false });
 user.ownsPackage(4, { excludeExpiring: true, excludeFree: true, excludeShared: true });
 
-// deprecated since v4.22.1
-user.on('appOwnershipCached', () => {});
 // not deprecated
 user.on('ownershipCached', () => {});
 

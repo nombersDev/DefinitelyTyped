@@ -164,11 +164,6 @@ declare class SteamUser extends EventEmitter {
 
     // EVENTS
     on<K extends keyof Events>(event: K, listener: (...args: Events[K]) => void): this;
-    /**
-     * Please use 'ownershipCached'
-     * @deprecated since v4.22.1
-     */
-    on(event: 'appOwnershipCached', listener: () => void): this;
     once<K extends keyof Events>(event: K, listener: (...args: Events[K]) => void): this;
     off<K extends keyof Events>(event: K, listener: (...args: Events[K]) => void): this;
     removeListener<K extends keyof Events>(event: K, listener: (...args: Events[K]) => void): this;
